@@ -12,4 +12,16 @@ let mix = require('laravel-mix');
  */
 
 mix.js('resources/assets/js/app.js', 'public/js')
-   .sass('resources/assets/sass/app.scss', 'public/css');
+      .sass('resources/assets/sass/app.sass', '../resources/assets/css/')
+      // .combine(
+      // 		[
+      // 		'public/js/slick.js',
+      // 		'public/js/app.js'
+      // 		], 'public/js/all.js')
+      .combine(
+      		[
+      		'resources/assets/css/icons-font.css',
+      		'resources/assets/css/bootstrap.min.css',
+      		'resources/assets/css/slick.css',
+      		'resources/assets/css/app.css'
+      		], 'public/css/all.css');
