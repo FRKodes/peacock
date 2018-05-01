@@ -14,7 +14,7 @@
         <footer>
             @include('partials.footer')
         </footer>
-        <link href="" rel="stylesheet" type="text/css">
         <script src="{{ url('js/app.js') }}"></script>
+        <script src="{{ url('js/all.js') }}"></script>
     </body>
 </html>

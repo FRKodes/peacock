@@ -11,13 +11,13 @@ let mix = require('laravel-mix');
  |
  */
 
-mix.js('resources/assets/js/app.js', 'public/js')
+mix.js('resources/assets/js/custom.js', 'public/js')
       .sass('resources/assets/sass/app.sass', '../resources/assets/css/')
-      // .combine(
-      // 		[
-      // 		'public/js/slick.js',
-      // 		'public/js/app.js'
-      // 		], 'public/js/all.js')
+      .combine(
+      		[
+      		'resources/assets/js/slick.js',
+      		'resources/assets/js/custom.js'
+      		], 'public/js/all.js')
       .combine(
       		[
       		'resources/assets/css/icons-font.css',

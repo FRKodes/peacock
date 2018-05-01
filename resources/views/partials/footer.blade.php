@@ -52,8 +52,8 @@
 			<div class="row">
 				<div class="col-xs-12 footer-bottom">
 					<ul class="social">
-						<li><a href="" class="icon-fb">FB</a></li>
-						<li><a href="" class="icon-ig">IG</a></li>
+						<li><a href="" class="icon-fb"></a></li>
+						<li><a href="" class="icon-ig"></a></li>
 					</ul>
 					<p class="credits">&copy; Peacock {{ date('Y') }} | Desarrollado por <a class="mayus" href="http://www.blueterrier.mx"><strong>Blue Terrier Studio</strong></a></p>
 				</div>

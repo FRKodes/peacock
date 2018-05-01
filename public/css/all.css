@@ -1,3 +1,67 @@
+@charset "UTF-8";
+
+@font-face {
+  font-family: "icons-font";
+  src:url("/fonts/icons-font.eot");
+  src:url("/fonts/icons-font.eot?#iefix") format("embedded-opentype"),
+    url("/fonts/icons-font.woff") format("woff"),
+    url("/fonts/icons-font.ttf") format("truetype"),
+    url("/fonts/icons-font.svg#icons-font") format("svg");
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+[data-icon]:before {
+  font-family: "icons-font" !important;
+  content: attr(data-icon);
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-variant: normal !important;
+  text-transform: none !important;
+  speak: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+[class^="icon-"]:before,
+[class*=" icon-"]:before {
+  font-family: "icons-font" !important;
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-variant: normal !important;
+  text-transform: none !important;
+  speak: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-bobino:before {
+  content: "\61";
+}
+.icon-canino:before {
+  content: "\62";
+}
+.icon-caprino:before {
+  content: "\63";
+}
+.icon-fb:before {
+  content: "\64";
+}
+.icon-ig:before {
+  content: "\65";
+}
+.icon-logo-peacock:before {
+  content: "\66";
+}
+.icon-porcino:before {
+  content: "\67";
+}
+.icon-ubicacion:before {
+  content: "\68";
+}
 
 /*!
  * Bootstrap v4.0.0-beta (https://getbootstrap.com)
@@ -8380,6 +8444,10 @@ button.close {
   }
 }
 
+.rojo {
+  color: #fe0c0b;
+}
+
 .gris {
   color: #535353;
 }
@@ -8400,6 +8468,10 @@ button.close {
   font-family: 'Ubuntu', sans-serif;
 }
 
+.cien {
+  width: 100%;
+}
+
 body {
   background: white;
   color: #572f0b;
@@ -8414,6 +8486,7 @@ body {
   background: rgba(87, 47, 11, 0.5);
   position: relative;
   min-height: 60px;
+  border-radius: 0;
 }
 
 .navbar.fixed-top {
@@ -8460,12 +8533,79 @@ body {
   margin-top: -85px;
 }
 
+.main-banners-container .item {
+  height: 560px;
+  display: block;
+  background-color: transparent;
+  background-image: url(/images/background-producto-principal-caballos.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.main-banners-container .item.horse {
+  background: transparent url(/images/background-producto-principal-caballos.jpg) no-repeat center center;
+  background-size: cover;
+}
+
+.main-banners-container .item.cow {
+  background: transparent url(/images/background-producto-principal-caballos.jpg) no-repeat center center;
+  background-size: cover;
+}
+
+.slick-list {
+  padding-top: 20px;
+}
+
+.slick-dots {
+  padding: 0;
+  margin: 0;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.slick-dots li {
+  display: inline-block;
+  padding: 1px;
+  border: 1px solid #572f0b;
+  margin: 0 5px;
+  overflow: hidden;
+  border-radius: 2px;
+  height: 14px;
+}
+
+.slick-dots li button {
+  padding: 0;
+  width: 10px;
+  height: 10px;
+  border: none;
+  color: transparent;
+  overflow: hidden;
+  background: none;
+  -webkit-transition: background .5s ease;
+  transition: background .5s ease;
+  border-radius: 2px;
+  text-indent: -9999px;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.slick-dots li.slick-active button {
+  background: #572f0b;
+  -webkit-transition: background .5s ease;
+  transition: background .5s ease;
+}
+
+.slick-arrow {
+  display: none !important;
+}
+
 .who-we-are {
-  margin-top: 40px;
+  margin-top: 80px;
 }
 
 .who-we-are h1 {
   margin-top: 0;
+  color: #572f0b;
 }
 
 .who-we-are img {
@@ -8505,20 +8645,24 @@ body {
   display: flex;
   -ms-flex-pack: distribute;
       justify-content: space-around;
+  display: flex !important;
 }
 
 .featured-products-container .product-item .photo {
   width: 25%;
+  display: inline-block;
 }
 
 .featured-products-container .product-item .photo img {
   width: 100%;
   height: auto;
   margin-top: -15px;
+  display: inline-block;
 }
 
 .featured-products-container .product-item .info {
   width: 65%;
+  position: relative;
 }
 
 .featured-products-container .product-item .info h3 {
@@ -8539,6 +8683,22 @@ body {
 
 .featured-products-container .product-item .info .use.yellow {
   background-color: #ffea00;
+}
+
+.featured-products-container .product-item .info .animals {
+  display: block;
+  overflow: hidden;
+}
+
+.featured-products-container .product-item .info .animals span {
+  font-size: 2em;
+  margin-right: 10px;
+}
+
+.featured-products-container .product-item .info .link_read_more {
+  position: relative;
+  float: right;
+  margin: 5px 15px;
 }
 
 .back-brown {
@@ -8678,9 +8838,246 @@ footer .logo-footer {
 
 .footer-bottom .social li {
   display: inline-block;
+  margin: 0 5px;
+  font-size: 2em;
 }
 
 .footer-bottom .credits {
   font-size: .8em;
+}
+
+@media screen and (min-width: 480px) {
+  .featured-products-container .product-item .info .link_read_more {
+    margin: 40px 15px 5px 15px;
+  }
+
+  .productos-peacock img {
+    width: 90%;
+    margin-top: -40px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .top-shit {
+    width: 25%;
+  }
+
+  .navbar-collapse {
+    position: relative;
+    top: 0;
+    width: 70%;
+    padding-left: 0;
+  }
+
+  .navbar-nav {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    float: right;
+  }
+
+  .navbar-collapse {
+    background: none;
+  }
+
+  .navbar-nav > li {
+    font-size: .8em;
+  }
+
+  .navbar .row.cien {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row;
+            flex-flow: row;
+  }
+
+  .navbar-expand-md .navbar-nav .nav-link {
+    padding-right: 0.8rem;
+    padding-left: 0.8rem;
+  }
+
+  .main-banners-container {
+    height: 620px;
+  }
+
+  .main-banners-container .item {
+    height: 570px;
+  }
+
+  .who-we-are {
+    margin-top: 60px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-flow: row-reverse;
+            flex-flow: row-reverse;
+  }
+
+  .who-we-are .image {
+    width: 55%;
+    display: inline-block;
+  }
+
+  .who-we-are .text {
+    width: 60%;
+    display: inline-block;
+    border-top: 1px solid #572f0b;
+    border-right: none;
+  }
+
+  .sunshine-banner {
+    height: 390px;
+  }
+
+  .back-brown {
+    height: 100px;
+    padding-top: 25px;
+    padding-left: 65px;
+  }
+
+  .dist-image {
+    height: 330px;
+    border: 1px solid #572f0b;
+    background: transparent url(/images/oveja-distribuidor-home.jpg) no-repeat center center;
+    background-size: cover;
+    margin-top: -120px;
+  }
+
+  .dist-image img {
+    display: none;
+  }
+
+  .dist-text .btn.btn-primary.red-btn {
+    margin: 30px 0 30px auto;
+  }
+
+  .slick-list {
+    padding-top: 50px;
+  }
+
+  .featured-products-container .product-item {
+    width: 94% !important;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column;
+            flex-flow: column;
+    background: #dbc8b7 url(/images/background-product-thumbnail.jpg) no-repeat center top;
+    background-size: 100%;
+  }
+
+  .featured-products-container .product-item .photo {
+    width: 100%;
+    display: block;
+    text-align: center;
+  }
+
+  .featured-products-container .product-item .photo img {
+    width: 112px;
+    margin-top: -50px;
+  }
+
+  .featured-products-container .product-item .info {
+    width: 100%;
+    display: block;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .featured-products-container .product-item .info h3 {
+    font-weight: 700;
+  }
+
+  .featured-products-container .product-item .info .substance {
+    font-weight: 700;
+  }
+
+  .featured-products-container .product-item .info .link_read_more {
+    margin-top: 10px;
+  }
+
+  .back-cow {
+    height: 400px;
+  }
+
+  .productos-peacock img {
+    width: 80%;
+    margin-top: -80px;
+  }
+
+  footer .footer-bottom {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row;
+            flex-flow: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  footer .container-fluid.back-brown {
+    padding-left: 15px;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .navbar-nav > li {
+    font-size: 1em;
+  }
+
+  .main-banners-container {
+    height: 720px;
+  }
+
+  .main-banners-container .item {
+    height: 670px;
+  }
+
+  .who-we-are {
+    margin-top: 60px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-flow: row-reverse;
+            flex-flow: row-reverse;
+  }
+
+  .who-we-are .image {
+    width: 30%;
+  }
+
+  .who-we-are .text {
+    width: 70%;
+  }
+
+  .back-cow {
+    height: 520px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .back-cow {
+    height: 570px;
+  }
+
+  .productos-peacock img {
+    margin-top: -110px;
+  }
+
+  .dist-image {
+    margin-bottom: 80px;
+    height: 400px;
+  }
 }
 
