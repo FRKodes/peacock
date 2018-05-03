@@ -1,44 +1,8 @@
 @extends('app')
 
 @section('content')
-	<div class="container-fluid">
-		<div class="row">
-			<div class="main-banners-container">
-				<div class="item horse">
-					<div class="container">
-						<div class="row">
-							<div class="col-xs-12 col-md-6 image">
-								<img src="images/producto-principal-caballo.png" alt="producto principal caballo">
-							</div>
-							<div class="col-xs-12 col-md-6 info">
-								<h2>Strepto Guard</h2>
-								<p class="bold">+ Dexametasona</p>
-								<p class="use yellow gris">Virológico grandes especies</p>
-								<p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti fugit quasi sed repellat.</p>
-								<p class="btn-banner"><a href="#" class="btn btn-primary red-btn ubuntu italic mt-0 mb-0">Ver más detalles</a></p>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="item cow">
-					<div class="container">
-						<div class="row">
-							<div class="col-xs-12 col-md-6 image">
-								<img src="images/producto-principal-caballo.png" alt="producto principal caballo">
-							</div>
-							<div class="col-xs-12 col-md-6 info">
-								<h2>Strepto Guard</h2>
-								<p class="bold">+ Dexametasona</p>
-								<p class="use yellow gris">Virológico grandes especies</p>
-								<p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti fugit quasi sed repellat.</p>
-								<p class="btn-banner"><a href="#" class="btn btn-primary red-btn ubuntu italic mt-0 mb-0">Ver más detalles</a></p>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
+	
+	@include('partials.main-banners')
 
 	<div class="container">
 		<div class="row">
@@ -55,61 +19,9 @@
 		</div>
 	</div>
 
-	<div class="container-fluid sunshine-banner">
-	</div>
+	<div class="container-fluid sunshine-banner"></div>
 	
-	<div class="container">
-		<div class="row">
-			<div class="col-xs-12 featured-products-container">
-				
-				<div class="product-item">
-					<div class="photo"><img src="images/product-thumbnail.png" alt="product thumbnail"></div>
-					<div class="info">
-						<h3>STREPTO GUARD</h3>
-						<p class="substance gris">+ Dexametasona</p>
-						<p class="use yellow">Virológico grandes especies</p>
-						<div class="animals">
-							<span class="icon-bobino"></span>
-							<span class="icon-caprino"></span>
-							<span class="icon-porcino"></span>
-						</div>
-						<a class="link_read_more rojo italic" href="#" class="rojo">Ver detalle</a>
-					</div>
-				</div>
-
-				<div class="product-item">
-					<div class="photo"><img src="images/product-thumbnail.png" alt="product thumbnail"></div>
-					<div class="info">
-						<h3>STREPTO GUARD</h3>
-						<p class="substance gris">+ Dexametasona</p>
-						<p class="use yellow">Virológico grandes especies</p>
-						<div class="animals">
-							<span class="icon-bobino"></span>
-							<span class="icon-caprino"></span>
-							<span class="icon-porcino"></span>
-						</div>
-						<a class="link_read_more rojo italic" href="#" class="rojo">Ver detalle</a>
-					</div>
-				</div>
-
-				<div class="product-item">
-					<div class="photo"><img src="images/product-thumbnail.png" alt="product thumbnail"></div>
-					<div class="info">
-						<h3>STREPTO GUARD</h3>
-						<p class="substance gris">+ Dexametasona</p>
-						<p class="use yellow">Virológico grandes especies</p>
-						<div class="animals">
-							<span class="icon-bobino"></span>
-							<span class="icon-caprino"></span>
-							<span class="icon-porcino"></span>
-						</div>
-						<a class="link_read_more rojo italic" href="#" class="rojo">Ver detalle</a>
-					</div>
-				</div>
-
-			</div>
-		</div>
-	</div>
+	@include('partials.featured-products')
 
 	<div class="container-fluid back-brown">
 		<img class="logo-gradients" src="images/peacock-logo-color.png" alt="peacock logo color">

@@ -8,10 +8,10 @@
 				<div class="col-xs-12 col-sm-4 col_footer">
 					<div class="footer-title mayus">Empresa</div>
 					<ul class="links-list">
-						<li><a href=""></a>Quiénes somos</li>
-						<li><a href=""></a>Contacto</li>
-						<li><a href=""></a>Se distribuidor</li>
-						<li><a href=""></a>Red de distribución</li>
+						<li><a href="#">Quiénes somos</a></li>
+						<li><a href="#">Contacto</a></li>
+						<li><a href="#">Se distribuidor</a></li>
+						<li><a href="#">Red de distribución</a></li>
 					</ul>
 				</div>
 				<div class="col-xs-12 col-sm-4 col_footer">
@@ -55,7 +55,7 @@
 						<li><a href="" class="icon-fb"></a></li>
 						<li><a href="" class="icon-ig"></a></li>
 					</ul>
-					<p class="credits">&copy; Peacock {{ date('Y') }} | Desarrollado por <a class="mayus" href="http://www.blueterrier.mx"><strong>Blue Terrier Studio</strong></a></p>
+					<p class="credits">&copy; Peacock {{ date('Y') }} | Desarrollado por <a class="mayus" target="_blank" title="Made with ❤️ @ Guadalajara by Blue Terrier Studio 🐶" href="http://www.blueterrier.mx"><strong>Blue Terrier Studio</strong></a></p>
 				</div>
 			</div>
 		</div>

@@ -44,21 +44,30 @@
 .icon-canino:before {
   content: "\62";
 }
-.icon-caprino:before {
+.icon-equino:before {
   content: "\63";
 }
-.icon-fb:before {
+.icon-felino:before {
   content: "\64";
 }
-.icon-ig:before {
+.icon-ovino:before {
   content: "\65";
 }
-.icon-logo-peacock:before {
+.icon-porcino:before {
   content: "\66";
 }
-.icon-porcino:before {
+.icon-ubicacion:before {
   content: "\67";
 }
-.icon-ubicacion:before {
+.icon-ig:before {
   content: "\68";
+}
+.icon-logo-peacock:before {
+  content: "\69";
+}
+.icon-fb:before {
+  content: "\6a";
+}
+.icon-caprino:before {
+  content: "\6b";
 }

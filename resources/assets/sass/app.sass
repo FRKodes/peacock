@@ -78,7 +78,7 @@ body
 			background: transparent url(/images/background-producto-principal-caballos.jpg) no-repeat center 50px
 			background-size: 570px
 		&.cow
-			background: transparent url(/images/background-producto-principal-caballos.jpg) no-repeat center 50px
+			background: transparent url(/images/background-producto-principal-home-02.jpg) no-repeat center 50px
 			background-size: 570px
 		.image
 			text-align: center
@@ -107,6 +107,20 @@ body
 
 .slick-list
 	padding-top: 20px
+// .slick-slide
+// 	.image img
+// 		opacity: 1
+// 		margin-left: 0
+// 	&.slick-active
+// 		.image img
+// 			margin-left: -10000px
+// 			opacity: 0
+// 			transition: all 0.3s ease-out 4s
+// 		.info
+// 			margin-left: -12000px
+// 			transition-delay: 4s
+// 			transition-property: margin-left
+// 			transition-duration: .4s
 .slick-dots
 	padding: 0
 	margin: 0
@@ -281,6 +295,11 @@ footer
 	color: $cafe02
 	a
 		color: $cafe02
+		transition: color .5s ease
+		&:hover
+			text-decoration: none
+			color: white
+			transition: color .5s ease
 	.social
 		text-align: center
 		padding: 0
@@ -306,10 +325,13 @@ footer
 		.item
 			&.horse
 				background-size: 768px
-				background-position: center 0px
+				background-position: center -60px
 			&.cow
 				background-size: 768px
-				background-position: center 0px
+				background-position: center -60px
+		.slick-dots
+			margin-top: -30px
+			margin-bottom: 90px
 @media screen and (min-width: 768px)
 	.top-shit
 		width: 25%
@@ -392,6 +414,10 @@ footer
 			flex-flow: column;
 			background: $cafe02 url(/images/background-product-thumbnail.jpg) no-repeat center top
 			background-size: 100%
+			&.dos
+				background: $cafe02 url(/images/background-product-thumbnail-01.jpg) no-repeat center top
+			&.tres
+				background: $cafe02 url(/images/background-product-thumbnail-02.jpg) no-repeat center top
 			.photo
 				width: 100%
 				display: block
@@ -433,15 +459,15 @@ footer
 		.item
 			height: 670px
 			&.horse
-				background-position: center top
-				background-size: 1080px
+				background-position: center -60px
+				background-size: 1200px
 			&.cow
-				background-position: center top
-				background-size: 1080px
+				background-position: center -60px
+				background-size: 1200px
 			.image
 				margin-top: 170px
 			.info
-				margin-top: 330px
+				margin-top: 320px
 				h2
 					font-size: 2.8em
 				.btn-banner
@@ -470,11 +496,11 @@ footer
 	.main-banners-container
 		.item
 			&.horse
-				background-size: cover
-				background-position: center -710px
+				background-size: 1600px
+				background-position: center -255px
 			&.cow
-				background-size: cover
-				background-position: center -710px
+				background-size: 1600px
+				background-position: center -255px
 			.image
 				margin-top: 170px
 				img
@@ -487,3 +513,33 @@ footer
 					text-align: left
 				.description
 					padding-right: 200px
+		.slick-dots
+			position: relative
+			z-index: 10
+@media screen and (min-width: 1600px)
+	.main-banners-container
+		.item
+			&.horse
+				background-size: 2000px
+				background-position: center -460px
+			&.cow
+				background-size: 2000px
+				background-position: center -460px
+@media screen and (min-width: 2000px)
+	.main-banners-container
+		.item
+			&.horse
+				background-size: 2400px
+				background-position: center -655px
+			&.cow
+				background-size: 2400px
+				background-position: center -655px
+@media screen and (min-width: 2400px)
+	.main-banners-container
+		.item
+			&.horse
+				background-size: 2800px
+				background-position: center -865px
+			&.cow
+				background-size: 2800px
+				background-position: center -865px

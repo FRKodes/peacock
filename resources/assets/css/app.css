@@ -8465,7 +8465,7 @@ body {
 }
 
 .main-banners-container .item.cow {
-  background: transparent url(/images/background-producto-principal-caballos.jpg) no-repeat center 50px;
+  background: transparent url(/images/background-producto-principal-home-02.jpg) no-repeat center 50px;
   background-size: 570px;
 }
 
@@ -8783,6 +8783,15 @@ footer .logo-footer {
 
 .footer-bottom a {
   color: #dbc8b7;
+  -webkit-transition: color .5s ease;
+  transition: color .5s ease;
+}
+
+.footer-bottom a:hover {
+  text-decoration: none;
+  color: white;
+  -webkit-transition: color .5s ease;
+  transition: color .5s ease;
 }
 
 .footer-bottom .social {
@@ -8815,12 +8824,17 @@ footer .logo-footer {
 @media screen and (min-width: 560px) {
   .main-banners-container .item.horse {
     background-size: 768px;
-    background-position: center 0px;
+    background-position: center -60px;
   }
 
   .main-banners-container .item.cow {
     background-size: 768px;
-    background-position: center 0px;
+    background-position: center -60px;
+  }
+
+  .main-banners-container .slick-dots {
+    margin-top: -30px;
+    margin-bottom: 90px;
   }
 }
 
@@ -8968,6 +8982,14 @@ footer .logo-footer {
     background-size: 100%;
   }
 
+  .featured-products-container .product-item.dos {
+    background: #dbc8b7 url(/images/background-product-thumbnail-01.jpg) no-repeat center top;
+  }
+
+  .featured-products-container .product-item.tres {
+    background: #dbc8b7 url(/images/background-product-thumbnail-02.jpg) no-repeat center top;
+  }
+
   .featured-products-container .product-item .photo {
     width: 100%;
     display: block;
@@ -9041,13 +9063,13 @@ footer .logo-footer {
   }
 
   .main-banners-container .item.horse {
-    background-position: center top;
-    background-size: 1080px;
+    background-position: center -60px;
+    background-size: 1200px;
   }
 
   .main-banners-container .item.cow {
-    background-position: center top;
-    background-size: 1080px;
+    background-position: center -60px;
+    background-size: 1200px;
   }
 
   .main-banners-container .item .image {
@@ -9055,7 +9077,7 @@ footer .logo-footer {
   }
 
   .main-banners-container .item .info {
-    margin-top: 330px;
+    margin-top: 320px;
   }
 
   .main-banners-container .item .info h2 {
@@ -9109,13 +9131,13 @@ footer .logo-footer {
   }
 
   .main-banners-container .item.horse {
-    background-size: cover;
-    background-position: center -710px;
+    background-size: 1600px;
+    background-position: center -255px;
   }
 
   .main-banners-container .item.cow {
-    background-size: cover;
-    background-position: center -710px;
+    background-size: 1600px;
+    background-position: center -255px;
   }
 
   .main-banners-container .item .image {
@@ -9140,6 +9162,47 @@ footer .logo-footer {
 
   .main-banners-container .item .info .description {
     padding-right: 200px;
+  }
+
+  .main-banners-container .slick-dots {
+    position: relative;
+    z-index: 10;
+  }
+}
+
+@media screen and (min-width: 1600px) {
+  .main-banners-container .item.horse {
+    background-size: 2000px;
+    background-position: center -460px;
+  }
+
+  .main-banners-container .item.cow {
+    background-size: 2000px;
+    background-position: center -460px;
+  }
+}
+
+@media screen and (min-width: 2000px) {
+  .main-banners-container .item.horse {
+    background-size: 2400px;
+    background-position: center -655px;
+  }
+
+  .main-banners-container .item.cow {
+    background-size: 2400px;
+    background-position: center -655px;
+  }
+}
+
+@media screen and (min-width: 2400px) {
+  .main-banners-container .item.horse {
+    background-size: 2800px;
+    background-position: center -865px;
+  }
+
+  .main-banners-container .item.cow {
+    background-size: 2800px;
+    background-position: center -865px;
   }
 }
 

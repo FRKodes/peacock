@@ -2,6 +2,7 @@ console.log('ok!');
 
 $('.main-banners-container').slick({
 	autoplay: true,
+	autoplaySpeed: 4000,
 	infinite: true,
 	dots: true
 });
