@@ -11,6 +11,12 @@ $gris: #535353
 
 $amarillo: #ffea00
 
+.mt-0
+	margin-top: 0px
+.mb-0
+	margin-bottom: 0px
+.bold
+	font-weight: 700
 .rojo
 	color: $rojo
 .gris
@@ -59,7 +65,6 @@ body
 .main-banners-container
 	height: 580px
 	display: block
-	background: gray
 	width: 100%
 	margin-top: -85px
 	.item
@@ -68,13 +73,38 @@ body
 		background-color: transparent
 		background-image: url(/images/background-producto-principal-caballos.jpg)
 		background-repeat: no-repeat
-		background-position: center center
+		background-position: center top
 		&.horse
-			background: transparent url(/images/background-producto-principal-caballos.jpg) no-repeat center center
-			background-size: cover
+			background: transparent url(/images/background-producto-principal-caballos.jpg) no-repeat center 50px
+			background-size: 570px
 		&.cow
-			background: transparent url(/images/background-producto-principal-caballos.jpg) no-repeat center center
-			background-size: cover
+			background: transparent url(/images/background-producto-principal-caballos.jpg) no-repeat center 50px
+			background-size: 570px
+		.image
+			text-align: center
+			margin-top: 120px
+			img
+				width: 260px
+				display: inline-block
+				height: auto
+		.info
+			margin-top: -50px
+			color: $gris
+			h2
+				font-size: 2.6em
+				font-weight: 700
+				margin-top: 15px
+				margin-bottom: 2px
+			.yellow
+				background-color: $amarillo
+				display: inline-block
+				padding-left: 5px
+				padding-right: 5px
+			p
+				margin-bottom: 5px
+			.btn-banner
+				text-align: center
+
 .slick-list
 	padding-top: 20px
 .slick-dots
@@ -271,6 +301,15 @@ footer
 		img
 			width: 90%
 			margin-top: -40px
+@media screen and (min-width: 560px)
+	.main-banners-container
+		.item
+			&.horse
+				background-size: 768px
+				background-position: center 0px
+			&.cow
+				background-size: 768px
+				background-position: center 0px
 @media screen and (min-width: 768px)
 	.top-shit
 		width: 25%
@@ -299,6 +338,23 @@ footer
 		height: 620px
 		.item
 			height: 570px
+			&.horse
+				background-position: center top
+				background-size: 930px
+			&.cow
+				background-position: center top
+				background-size: 930px
+			.image
+				margin-top: 200px
+				img
+					width: 100%
+			.info
+				margin-top: 250px
+				color: white
+				h2
+					font-size: 2.6em
+				.btn-banner
+					text-align: left
 	.who-we-are
 		margin-top: 60px
 		display: flex
@@ -376,6 +432,22 @@ footer
 		height: 720px
 		.item
 			height: 670px
+			&.horse
+				background-position: center top
+				background-size: 1080px
+			&.cow
+				background-position: center top
+				background-size: 1080px
+			.image
+				margin-top: 170px
+			.info
+				margin-top: 330px
+				h2
+					font-size: 2.8em
+				.btn-banner
+					text-align: left
+				.description
+					padding-right: 100px
 	.who-we-are
 		margin-top: 60px
 		display: flex
@@ -395,3 +467,23 @@ footer
 	.dist-image
 		margin-bottom: 80px
 		height: 400px
+	.main-banners-container
+		.item
+			&.horse
+				background-size: cover
+				background-position: center -710px
+			&.cow
+				background-size: cover
+				background-position: center -710px
+			.image
+				margin-top: 170px
+				img
+					width: 85%
+			.info
+				margin-top: 330px
+				h2
+					font-size: 2.8em
+				.btn-banner
+					text-align: left
+				.description
+					padding-right: 200px
