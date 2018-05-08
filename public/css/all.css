@@ -8518,6 +8518,24 @@ body {
   width: 150px;
 }
 
+.dropdown-menu {
+  background: rgba(87, 47, 11, 0.5);
+}
+
+.dropdown-menu .dropdown-item {
+  background: transparent;
+  -webkit-transition: all .5s ease;
+  transition: all .5s ease;
+}
+
+.dropdown-menu .dropdown-item:hover {
+  cursor: pointer;
+  background: rgba(87, 47, 11, 0.7);
+  color: white;
+  -webkit-transition: background .5s ease;
+  transition: background .5s ease;
+}
+
 .top-shit {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -8821,6 +8839,153 @@ body {
   height: auto;
 }
 
+.inner-banner {
+  height: 220px;
+  background-color: purple;
+  display: block;
+}
+
+.inner-banner.ovinos {
+  background: transparent url(/images/banner-categoria-ovino.jpg) no-repeat center center;
+  background-size: cover;
+}
+
+.inner-banner.strepto_guard {
+  background: transparent url(/images/background-producto-principal-caballos.jpg) no-repeat center center;
+  background-size: cover;
+}
+
+.inner-title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.inner-title:before {
+  margin-right: 5px;
+}
+
+.cat-products-container {
+  margin-top: 30px;
+  margin-bottom: 50px;
+}
+
+.cat-products-container .product-item {
+  border: 1px solid #572f0b;
+  background-color: #dbc8b7;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin-bottom: 50px;
+}
+
+.cat-products-container .product-item .photo {
+  width: 35%;
+  display: inline-block;
+}
+
+.cat-products-container .product-item .photo img {
+  width: 100%;
+  height: auto;
+  margin-top: -15px;
+  display: inline-block;
+}
+
+.cat-products-container .product-item .info {
+  width: 55%;
+  position: relative;
+}
+
+.cat-products-container .product-item .info h3 {
+  font-size: 1em;
+  margin-top: 15px;
+  margin-bottom: 2px;
+}
+
+.cat-products-container .product-item .info p {
+  margin: 0 0 3px;
+}
+
+.cat-products-container .product-item .info .use {
+  padding-left: 5px;
+  padding-right: 5px;
+  display: inline-block;
+  font-size: .8em;
+}
+
+.cat-products-container .product-item .info .use.yellow {
+  background-color: #ffea00;
+}
+
+.cat-products-container .product-item .info .animals {
+  display: block;
+  overflow: hidden;
+}
+
+.cat-products-container .product-item .info .animals span {
+  font-size: 2em;
+  margin-right: 10px;
+}
+
+.cat-products-container .product-item .info .link_read_more {
+  position: relative;
+  float: right;
+  margin: 0px 15px 5px 15px;
+  font-weight: bold;
+}
+
+.detail-image {
+  text-align: center;
+}
+
+.detail-image img {
+  width: 150px;
+  display: inline-block;
+  margin-top: -100px;
+}
+
+.detail-header-info h1 {
+  color: #535353;
+  font-weight: bold;
+  margin-bottom: 5px;
+  margin-top: 15px;
+}
+
+.detail-header-info h2 {
+  margin-top: 0px;
+  margin-bottom: 5px;
+  font-size: 1.2em;
+}
+
+.detail-header-info .use.yellow {
+  background-color: #ffea00;
+  display: inline-block;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+.detail-header-info .animals span {
+  font-size: 2em;
+  margin-right: 10px;
+}
+
+.detail-info-container {
+  padding-bottom: 40px;
+}
+
+h3.detail-sub-title {
+  font-size: 1.4em;
+  font-weight: bold;
+}
+
 footer {
   color: white;
 }
@@ -8913,6 +9078,22 @@ footer .logo-footer {
   font-size: .8em;
 }
 
+@media screen and (min-width: 375px) {
+  .cat-products-container .product-item .photo img {
+    margin-top: -35px;
+  }
+}
+
+@media screen and (min-width: 425px) {
+  .cat-products-container .product-item .photo img {
+    margin-bottom: 10px;
+  }
+
+  .cat-products-container .product-item .info .link_read_more {
+    margin-top: 40px;
+  }
+}
+
 @media screen and (min-width: 480px) {
   .featured-products-container .product-item .info .link_read_more {
     margin: 40px 15px 5px 15px;
@@ -8921,6 +9102,10 @@ footer .logo-footer {
   .productos-peacock img {
     width: 90%;
     margin-top: -40px;
+  }
+
+  .cat-products-container .product-item .photo img {
+    width: 150px;
   }
 }
 
@@ -8941,7 +9126,39 @@ footer .logo-footer {
   }
 }
 
+@media screen and (min-width: 580px) {
+  .inner-banner {
+    height: 320px;
+  }
+
+  .detail-image img {
+    width: 300px;
+    margin-top: -200px;
+  }
+
+  .detail-header-info h1 {
+    color: #535353;
+    font-weight: bold;
+    margin-bottom: 5px;
+    margin-top: 15px;
+  }
+
+  .detail-header-info h2 {
+    margin-top: 0px;
+    margin-bottom: 5px;
+    font-size: 1.2em;
+  }
+
+  .detail-header-info .animals span {
+    font-size: 2.6em;
+  }
+}
+
 @media screen and (min-width: 768px) {
+  .dropdown-menu {
+    top: 56px;
+  }
+
   .top-shit {
     width: 25%;
   }
@@ -9132,6 +9349,51 @@ footer .logo-footer {
     margin-top: -80px;
   }
 
+  .inner-title {
+    font-size: 3em;
+    margin: 30px 0;
+  }
+
+  .cat-products-container .product-item {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column;
+            flex-flow: column;
+    background: #dbc8b7 url(/images/banner-categoria-ovino.jpg) no-repeat center top;
+    background-size: 120%;
+    margin-top: 20px;
+  }
+
+  .cat-products-container .product-item .photo {
+    width: 100%;
+    text-align: center;
+  }
+
+  .cat-products-container .product-item .photo img {
+    width: 45%;
+    display: inline-block;
+  }
+
+  .cat-products-container .product-item .info {
+    width: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .cat-products-container .product-item .info .link_read_more {
+    margin-top: 10px;
+  }
+
+  .detail-image {
+    text-align: left;
+  }
+
+  .detail-image img {
+    width: 80%;
+    margin-top: -170px;
+    margin-bottom: 20px;
+  }
+
   footer .footer-bottom {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -9217,6 +9479,36 @@ footer .logo-footer {
   .back-cow {
     height: 520px;
   }
+
+  .inner-banner {
+    height: 400px;
+  }
+
+  .inner-title {
+    font-size: 3.4em;
+  }
+
+  .cat-products-container .product-item {
+    margin-top: 30px;
+    margin-bottom: 80px;
+  }
+
+  .cat-products-container .product-item .photo img {
+    margin-top: -60px;
+  }
+
+  .detail-image img {
+    width: 90%;
+    margin-top: -270px;
+  }
+
+  .detail-header-info h1 {
+    margin-top: 30px;
+  }
+
+  .detail-header-info h2 {
+    font-size: 1.4em;
+  }
 }
 
 @media screen and (min-width: 1200px) {
@@ -9270,6 +9562,32 @@ footer .logo-footer {
   .main-banners-container .slick-dots {
     position: relative;
     z-index: 10;
+  }
+
+  .inner-banner {
+    height: 460px;
+  }
+
+  .inner-title {
+    font-size: 4em;
+    margin-top: 40px;
+  }
+
+  .detail-image img {
+    width: 90%;
+    margin-top: -340px;
+  }
+
+  .detail-header-info h1 {
+    font-size: 3.6em;
+  }
+
+  .detail-header-info h2 {
+    font-size: 1.6em;
+  }
+
+  .detail-header-info .animals span {
+    font-size: 2.8em;
   }
 }
 

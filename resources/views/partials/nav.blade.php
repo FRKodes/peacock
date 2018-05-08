@@ -13,7 +13,15 @@
 			<div class="collapse navbar-collapse" id="navbarCollapse">
 				<ul class="navbar-nav mr-auto">
 					<li class="nav-item active"><a class="nav-link" href="#">Quiénes somos</a></li>
-					<li class="nav-item"><a class="nav-link" href="#">Productos</a></li>
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Productos</a>
+						<div class="dropdown-menu" aria-labelledby="dropdown01">
+							<a class="dropdown-item" href="{{ url('bovinos') }}">Bovinos</a>
+							<a class="dropdown-item" href="{{ url('equinos') }}">Equinos</a>
+							<a class="dropdown-item" href="{{ url('porcinos') }}">Porcinos</a>
+						</div>
+					</li>
+
 					<li class="nav-item"><a class="nav-link" href="#">Se distribuidor</a></li>
 					<li class="nav-item"><a class="nav-link" href="#">Contacto</a></li>
 					<li class="nav-item"><a class="nav-link" href="#">Red de distribución</a></li>

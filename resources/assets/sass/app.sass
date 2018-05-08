@@ -46,6 +46,16 @@ body
 		position: fixed
 	.logo
 		width: 150px
+.dropdown-menu
+	background: rgba($cafe01, .5)
+	.dropdown-item
+		background: transparent
+		transition: all .5s ease
+		&:hover
+			cursor: pointer
+			background: rgba($cafe01, .7)
+			color: white
+			transition: background .5s ease
 .top-shit
 	display: flex
 	width: 100%
@@ -253,6 +263,97 @@ body
 	img
 		width: 80%
 		height: auto
+.inner-banner
+	height: 220px
+	background-color: purple
+	display: block
+	&.ovinos
+		background: transparent url(/images/banner-categoria-ovino.jpg) no-repeat center center
+		background-size: cover
+	&.strepto_guard
+		background: transparent url(/images/background-producto-principal-caballos.jpg) no-repeat center center
+		background-size: cover
+.inner-title
+	display: flex
+	align-items: center
+	justify-content: center
+	&:before
+		margin-right: 5px
+.cat-products-container
+	margin-top: 30px
+	margin-bottom: 50px
+	.product-item
+		border: 1px solid $cafe01
+		background-color: $cafe02
+		display: flex
+		justify-content: space-around
+		margin-bottom: 50px
+		.photo
+			width: 35%
+			display: inline-block
+			img
+				width: 100%
+				height: auto
+				margin-top: -15px
+				display: inline-block
+		.info
+			width: 55%
+			position: relative
+			h3
+				font-size: 1em
+				margin-top: 15px
+				margin-bottom: 2px
+			p
+				margin: 0 0 3px
+			.use
+				padding-left: 5px
+				padding-right: 5px
+				display: inline-block
+				font-size: .8em
+				&.yellow
+					background-color: $amarillo
+			.animals
+				display: block
+				overflow: hidden
+				span
+					font-size: 2em
+					margin-right: 10px
+			.link_read_more
+				position: relative
+				float: right
+				margin: 0px 15px 5px 15px
+				font-weight: bold
+.detail-image
+	text-align: center
+	img
+		width: 150px
+		display: inline-block
+		margin-top: -100px
+.detail-header-info
+	h1
+		color: $gris
+		font-weight: bold
+		margin-bottom: 5px
+		margin-top: 15px
+	h2
+		margin-top: 0px
+		margin-bottom: 5px
+		font-size: 1.2em
+	.use 
+		&.yellow
+			background-color: $amarillo
+			display: inline-block
+			padding-left: 5px
+			padding-right: 5px
+	.animals
+		span
+			font-size: 2em
+			margin-right: 10px
+.detail-info-container
+	padding-bottom: 40px
+h3.detail-sub-title
+	font-size: 1.4em
+	font-weight: bold
 footer
 	color: white
 	.col_footer
@@ -310,6 +411,21 @@ footer
 			font-size: 2em
 	.credits
 		font-size: .8em
+@media screen and (min-width: 375px)
+	.cat-products-container
+		.product-item
+			.photo
+				img
+					margin-top: -35px
+@media screen and (min-width: 425px)
+	.cat-products-container
+		.product-item
+			.photo
+				img
+					margin-bottom: 10px
+			.info
+				.link_read_more
+					margin-top: 40px
 @media screen and (min-width: 480px)
 	.featured-products-container
 		.product-item
@@ -320,6 +436,11 @@ footer
 		img
 			width: 90%
 			margin-top: -40px
+	.cat-products-container
+		.product-item
+			.photo
+				img
+					width: 150px
 @media screen and (min-width: 560px)
 	.main-banners-container
 		.item
@@ -332,7 +453,29 @@ footer
 		.slick-dots
 			margin-top: -30px
 			margin-bottom: 90px
+@media screen and (min-width: 580px)
+	.inner-banner
+		height: 320px
+	.detail-image
+		img
+			width: 300px
+			margin-top: -200px
+	.detail-header-info
+		h1
+			color: $gris
+			font-weight: bold
+			margin-bottom: 5px
+			margin-top: 15px
+		h2
+			margin-top: 0px
+			margin-bottom: 5px
+			font-size: 1.2em
+		.animals
+			span
+				font-size: 2.6em
 @media screen and (min-width: 768px)
+	.dropdown-menu
+		top: 56px
 	.top-shit
 		width: 25%
 	.navbar-collapse
@@ -442,6 +585,33 @@ footer
 		img
 			width: 80%
 			margin-top: -80px
+	.inner-title
+		font-size: 3em
+		margin: 30px 0
+	.cat-products-container
+		.product-item
+			flex-flow: column
+			background: $cafe02 url(/images/banner-categoria-ovino.jpg) no-repeat center top
+			background-size: 120%
+			margin-top: 20px
+			.photo
+				width: 100%
+				text-align: center
+				img
+					width: 45%
+					display: inline-block
+			.info
+				width: 100%
+				padding-left: 15px
+				padding-right: 15px
+				.link_read_more
+					margin-top: 10px
+	.detail-image
+		text-align: left
+		img
+			width: 80%
+			margin-top: -170px
+			margin-bottom: 20px
 	footer
 		.footer-bottom
 			display: flex
@@ -484,6 +654,26 @@ footer
 			width: 70%
 	.back-cow
 		height: 520px
+	.inner-banner
+		height: 400px
+	.inner-title
+		font-size: 3.4em
+	.cat-products-container
+		.product-item
+			margin-top: 30px
+			margin-bottom: 80px
+			.photo
+				img
+					margin-top: -60px
+	.detail-image
+		img
+			width: 90%
+			margin-top: -270px
+	.detail-header-info
+		h1
+			margin-top: 30px
+		h2
+			font-size: 1.4em
 @media screen and (min-width: 1200px)
 	.back-cow
 		height: 570px
@@ -516,6 +706,23 @@ footer
 		.slick-dots
 			position: relative
 			z-index: 10
+	.inner-banner
+		height: 460px
+	.inner-title
+		font-size: 4em
+		margin-top: 40px
+	.detail-image
+		img
+			width: 90%
+			margin-top: -340px
+	.detail-header-info
+		h1
+			font-size: 3.6em
+		h2
+			font-size: 1.6em
+		.animals
+			span
+				font-size: 2.8em
 @media screen and (min-width: 1600px)
 	.main-banners-container
 		.item

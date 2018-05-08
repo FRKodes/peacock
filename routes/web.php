@@ -12,3 +12,5 @@
 */
 
 Route::get('/','PagesController@index');
+Route::get('bovinos','PagesController@bovinos');
+Route::get('strepto-guard','PagesController@strepto_guard');
