@@ -8453,12 +8453,36 @@ button.close {
   }
 }
 
+.pt-40 {
+  padding-top: 40px;
+}
+
+.pb-40 {
+  padding-bottom: 40px;
+}
+
+.pt-30 {
+  padding-top: 30px;
+}
+
+.pb-30 {
+  padding-bottom: 30px;
+}
+
+.p-top-30 {
+  padding-top: 30px;
+}
+
 .mt-0 {
   margin-top: 0px;
 }
 
 .mb-0 {
   margin-bottom: 0px;
+}
+
+.mb-40 {
+  margin-bottom: 40px;
 }
 
 .bold {
@@ -8855,6 +8879,26 @@ body {
   background-size: cover;
 }
 
+.inner-banner.contacto {
+  background: transparent url(/images/banner-interior-contacto-peacock-animal-health.jpg) no-repeat center center;
+  background-size: cover;
+}
+
+.inner-banner.quienes-somos {
+  background: transparent url(/images/banner-quienes-somos-peacock.jpg) no-repeat center center;
+  background-size: cover;
+}
+
+.inner-banner.puntos-dist {
+  background: transparent url(/images/banner-centros-distribucion.jpg) no-repeat center center;
+  background-size: cover;
+}
+
+.inner-banner.distribuidor {
+  background: transparent url(/images/banner-conviertete-distribuidor.jpg) no-repeat center center;
+  background-size: cover;
+}
+
 .inner-title {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -8984,6 +9028,85 @@ body {
 h3.detail-sub-title {
   font-size: 1.4em;
   font-weight: bold;
+}
+
+.mapa {
+  height: auto;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.mapa #map {
+  height: 340px;
+  background: transparent url(/images/mapa-contacto.jpg) no-repeat center center;
+  background-size: cover;
+  border: 1px solid #572f0b;
+}
+
+.mapa .contact-title {
+  font-size: 1.3em;
+}
+
+.mapa p {
+  margin: 0;
+}
+
+.form {
+  padding-top: 30px;
+}
+
+.form .form-title {
+  border-bottom: 1px solid #572f0b;
+  display: inline-block;
+  padding-right: 120px;
+}
+
+.form .form-control {
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 0;
+  border: none;
+  border-bottom: 2px solid rgba(87, 47, 11, 0.6);
+}
+
+.form .submit-btn-container {
+  text-align: center;
+}
+
+textarea {
+  resize: none;
+}
+
+.dist-item {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.dist-item .title {
+  font-size: 1.3em;
+}
+
+.dist-item p {
+  margin-bottom: 0;
+}
+
+.dist-item .link_mapa {
+  margin-bottom: 10px;
+}
+
+.back-cows-eating {
+  height: 220px;
+  background: transparent url(/images/quienes-somos-paralax.jpg) no-repeat center center;
+  background-size: cover;
+}
+
+.qs-image {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.qs-image img {
+  width: 100%;
+  height: auto;
 }
 
 footer {
@@ -9392,6 +9515,31 @@ footer .logo-footer {
     width: 80%;
     margin-top: -170px;
     margin-bottom: 20px;
+  }
+
+  .mapa #map {
+    height: 380px;
+  }
+
+  .form-group {
+    margin-bottom: 30px;
+  }
+
+  .form .submit-btn-container {
+    text-align: right;
+    margin-bottom: 15px;
+  }
+
+  .form .submit-btn-container .red-btn {
+    margin-top: 15px;
+  }
+
+  .container-text-qs {
+    padding-bottom: 100px;
+  }
+
+  .container-images-qs {
+    margin-top: -120px;
   }
 
   footer .footer-bottom {

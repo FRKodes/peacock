@@ -12,5 +12,11 @@
 */
 
 Route::get('/','PagesController@index');
+Route::get('quienes-somos','PagesController@quienes_somos');
+Route::get('contacto','PagesController@contacto');
+Route::get('conviertete-en-distribuidor','PagesController@distribuidor');
+Route::get('ser-distribuidor','PagesController@distribuidor');
+Route::get('red-de-distribucion','PagesController@puntos_dist');
+Route::get('puntos-de-distribucion','PagesController@puntos_dist');
 Route::get('bovinos','PagesController@bovinos');
 Route::get('strepto-guard','PagesController@strepto_guard');
