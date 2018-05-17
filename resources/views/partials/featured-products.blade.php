@@ -5,15 +5,15 @@
 			<div class="product-item">
 				<div class="photo"><img src="images/product-thumbnail.png" alt="product thumbnail"></div>
 				<div class="info">
-					<h3>STREPTO GUARD</h3>
-					<p class="substance gris">+ Dexametasona</p>
-					<p class="use yellow">Virológico grandes especies</p>
+					<h3>BACTERIN 2</h3>
+					<p class="substance gris">Doble bovina</p>
+					<p class="use green">Biológicos</p>
 					<div class="animals">
 						<span class="icon-bobino"></span>
 						<span class="icon-caprino"></span>
-						<span class="icon-porcino"></span>
+						<span class="icon-ovino"></span>
 					</div>
-					<a class="link_read_more rojo italic" href="#" class="rojo">Ver detalle</a>
+					<a class="link_read_more bold ubuntu rojo italic" href="{{ url('bacterin-2-doble-bovina') }}">Ver detalle</a>
 				</div>
 			</div>
 
@@ -28,7 +28,7 @@
 						<span class="icon-caprino"></span>
 						<span class="icon-porcino"></span>
 					</div>
-					<a class="link_read_more rojo italic" href="#" class="rojo">Ver detalle</a>
+					<a class="link_read_more bold ubuntu rojo italic" href="#" class="rojo">Ver detalle</a>
 				</div>
 			</div>
 
@@ -43,7 +43,7 @@
 						<span class="icon-caprino"></span>
 						<span class="icon-porcino"></span>
 					</div>
-					<a class="link_read_more rojo italic" href="#" class="rojo">Ver detalle</a>
+					<a class="link_read_more bold ubuntu rojo italic" href="#" class="rojo">Ver detalle</a>
 				</div>
 			</div>
 

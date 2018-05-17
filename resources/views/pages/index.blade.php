@@ -12,8 +12,10 @@
 				</div>
 				<div class="text gris">
 					<h1 class="ubuntu mayus">Peacock</h1>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore laudantium esse ad repellendus, facilis quae nostrum atque suscipit amet voluptates commodi neque doloremque ipsam inventore voluptatem nam ex, nisi mollitia.</p>
-					<a href="#" class="italic" title="Leer más sobre la historia de Peacock Animal Health">Leer más...</a>
+					<p>
+						Ubicado en Guadalajara Jalisco, México. Liderazgo incomparable, con experiencia de más de 30 años le ha permitido a PEACOCK®animal health destacar en el mercado en la salud animal con productos de clase líder de Calidad mundial, extendiéndose con éxito en los mercados internacionales así como cumpliendo con las buenas prácticas de manufactura (GMPs) y con los más altos estándares de calidad que le ha permitido ser pioneros en un mundo globalizado.
+					</p>
+					<a href="{{ url('quienes-somos') }}" class="ubuntu bold italic" title="Leer más sobre la historia de Peacock Animal Health">Leer más...</a>
 				</div>
 			</div>
 		</div>
@@ -38,7 +40,7 @@
 						<p>
 							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium repellat alias cumque explicabo, rem mollitia ut doloribus eveniet officiis facilis, enim ea at autem quam. Nesciunt cum, deserunt corrupti eius.
 						</p>
-						<a href="#" class="btn btn-primary red-btn ubuntu italic">Conviértete en distribuidor</a>
+						<a href="{{ url('ser-distribuidor') }}" class="btn btn-primary red-btn ubuntu italic">Conviértete en distribuidor</a>
 					</div>
 				</div>
 			</div>
@@ -62,7 +64,7 @@
 						<img src="images/ubicacion.svg" alt="ubicación de distribuidores de productos peacock animal health home">
 					</div>
 					<div class="col-xs-12 col-md-3 mr-md-auto text-center">
-						<a href="#" class="btn btn-primary red-btn ubuntu italic">Encuentra productos Peacock</a>
+						<a href="{{ url('red-de-distribucion') }}" class="btn btn-primary red-btn ubuntu italic">Encuentra productos Peacock</a>
 					</div>
 				</div>
 			</div>

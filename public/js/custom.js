@@ -96,10 +96,14 @@ $('.featured-products-container').slick({
       slidesToShow: 1,
       slidesToScroll: 1
     }
-    // You can unslick at a given breakpoint now by adding:
-    // settings: "unslick"
-    // instead of a settings object
   }]
+});
+
+$(window).scroll(function (event) {
+  var scroll = $(window).scrollTop();
+  console.log(scroll);
+  $('.sunshine-banner').css('background-position', 'center ' + scroll * -.15 + 'px');
+  $('.back-cow').css('background-position', 'center ' + scroll * -.06 + 'px');
 });
 
 /***/ }),

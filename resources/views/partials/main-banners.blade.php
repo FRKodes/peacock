@@ -10,7 +10,7 @@
 							<p class="bold">+ Dexametasona</p>
 							<p class="use yellow gris">Virológico grandes especies</p>
 							<p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti fugit quasi sed repellat.</p>
-							<p class="btn-banner"><a href="#" class="btn btn-primary red-btn ubuntu italic mt-0 mb-0">Ver más detalles</a></p>
+							<p class="btn-banner"><a href="{{ url('strepto-guard') }}" class="btn btn-primary red-btn ubuntu italic mt-0 mb-0">Ver más detalles</a></p>
 						</div>
 					</div>
 				</div>

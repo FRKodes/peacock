@@ -10,6 +10,8 @@ $rojo2: #9f262b
 $gris: #535353
 
 $amarillo: #ffea00
+$verde: #4C7926
+
 
 .pt-40
 	padding-top: 40px
@@ -122,6 +124,11 @@ body
 				display: inline-block
 				padding-left: 5px
 				padding-right: 5px
+			.green
+				background-color: $verde
+				display: inline-block
+				padding-left: 5px
+				padding-right: 5px
 			p
 				margin-bottom: 5px
 			.btn-banner
@@ -227,6 +234,8 @@ body
 				display: inline-block
 				&.yellow
 					background-color: $amarillo
+				&.green
+					background-color: $verde
 			.animals
 				display: block
 				overflow: hidden
@@ -264,6 +273,12 @@ body
 	border-color: $rojo
 	margin: 30px auto
 	display: inline-block
+	transition: all .5s ease
+	&:hover
+		background-color: rgba($rojo2, .7)
+		border-color: rgba($rojo, .7)
+		transition: all .5s ease
+
 .back-cow
 	background: transparent url(/images/paralax-toro.jpg) no-repeat center center
 	background-size: cover
@@ -292,6 +307,24 @@ body
 		background-size: cover
 	&.puntos-dist
 		background: transparent url(/images/banner-centros-distribucion.jpg) no-repeat center center
+		background-size: cover
+	&.bacterin_2
+		background: transparent url(/images/banner-bacterin-2-doble-bovina.jpg) no-repeat center center
+		background-size: cover
+	&.bacterin_3
+		background: transparent url(/images/banner-bacterin-3-triple-bovina.jpg) no-repeat center center
+		background-size: cover
+	&.bacterin_7
+		background: transparent url(/images/banner-bacterin-7-vias.jpg) no-repeat center center
+		background-size: cover
+	&.bacterin_8
+		background: transparent url(/images/banner-bacterin-8-vias.jpg) no-repeat center center
+		background-size: cover
+	&.bacterin_11
+		background: transparent url(/images/banner-bacterin-11-vias.jpg) no-repeat center center
+		background-size: cover
+	&.bacterin_pasteurelosis_ph
+		background: transparent url(/images/banner-bacterin-pasteurelosis.jpg) no-repeat center center
 		background-size: cover
 	&.distribuidor
 		background: transparent url(/images/banner-conviertete-distribuidor.jpg) no-repeat center center
@@ -335,6 +368,8 @@ body
 				font-size: .8em
 				&.yellow
 					background-color: $amarillo
+				&.green
+					background-color: $verde
 			.animals
 				display: block
 				overflow: hidden
@@ -365,6 +400,11 @@ body
 	.use 
 		&.yellow
 			background-color: $amarillo
+			display: inline-block
+			padding-left: 5px
+			padding-right: 5px
+		&.green
+			background-color: $verde
 			display: inline-block
 			padding-left: 5px
 			padding-right: 5px
@@ -808,6 +848,9 @@ footer
 		.animals
 			span
 				font-size: 2.8em
+@media screen and (min-width: 1400px)
+	.sunshine-banner
+		height: 490px
 @media screen and (min-width: 1600px)
 	.main-banners-container
 		.item
@@ -817,6 +860,8 @@ footer
 			&.cow
 				background-size: 2000px
 				background-position: center -460px
+	.sunshine-banner
+		height: 590px
 @media screen and (min-width: 2000px)
 	.main-banners-container
 		.item

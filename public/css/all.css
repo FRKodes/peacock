@@ -8644,6 +8644,13 @@ body {
   padding-right: 5px;
 }
 
+.main-banners-container .item .info .green {
+  background-color: #4C7926;
+  display: inline-block;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
 .main-banners-container .item .info p {
   margin-bottom: 5px;
 }
@@ -8785,6 +8792,10 @@ body {
   background-color: #ffea00;
 }
 
+.featured-products-container .product-item .info .use.green {
+  background-color: #4C7926;
+}
+
 .featured-products-container .product-item .info .animals {
   display: block;
   overflow: hidden;
@@ -8845,6 +8856,15 @@ body {
   border-color: #fe0c0b;
   margin: 30px auto;
   display: inline-block;
+  -webkit-transition: all .5s ease;
+  transition: all .5s ease;
+}
+
+.red-btn:hover {
+  background-color: rgba(159, 38, 43, 0.7);
+  border-color: rgba(254, 12, 11, 0.7);
+  -webkit-transition: all .5s ease;
+  transition: all .5s ease;
 }
 
 .back-cow {
@@ -8891,6 +8911,36 @@ body {
 
 .inner-banner.puntos-dist {
   background: transparent url(/images/banner-centros-distribucion.jpg) no-repeat center center;
+  background-size: cover;
+}
+
+.inner-banner.bacterin_2 {
+  background: transparent url(/images/banner-bacterin-2-doble-bovina.jpg) no-repeat center center;
+  background-size: cover;
+}
+
+.inner-banner.bacterin_3 {
+  background: transparent url(/images/banner-bacterin-3-triple-bovina.jpg) no-repeat center center;
+  background-size: cover;
+}
+
+.inner-banner.bacterin_7 {
+  background: transparent url(/images/banner-bacterin-7-vias.jpg) no-repeat center center;
+  background-size: cover;
+}
+
+.inner-banner.bacterin_8 {
+  background: transparent url(/images/banner-bacterin-8-vias.jpg) no-repeat center center;
+  background-size: cover;
+}
+
+.inner-banner.bacterin_11 {
+  background: transparent url(/images/banner-bacterin-11-vias.jpg) no-repeat center center;
+  background-size: cover;
+}
+
+.inner-banner.bacterin_pasteurelosis_ph {
+  background: transparent url(/images/banner-bacterin-pasteurelosis.jpg) no-repeat center center;
   background-size: cover;
 }
 
@@ -8969,6 +9019,10 @@ body {
   background-color: #ffea00;
 }
 
+.cat-products-container .product-item .info .use.green {
+  background-color: #4C7926;
+}
+
 .cat-products-container .product-item .info .animals {
   display: block;
   overflow: hidden;
@@ -9011,6 +9065,13 @@ body {
 
 .detail-header-info .use.yellow {
   background-color: #ffea00;
+  display: inline-block;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+.detail-header-info .use.green {
+  background-color: #4C7926;
   display: inline-block;
   padding-left: 5px;
   padding-right: 5px;
@@ -9739,6 +9800,12 @@ footer .logo-footer {
   }
 }
 
+@media screen and (min-width: 1400px) {
+  .sunshine-banner {
+    height: 490px;
+  }
+}
+
 @media screen and (min-width: 1600px) {
   .main-banners-container .item.horse {
     background-size: 2000px;
@@ -9748,6 +9815,10 @@ footer .logo-footer {
   .main-banners-container .item.cow {
     background-size: 2000px;
     background-position: center -460px;
+  }
+
+  .sunshine-banner {
+    height: 590px;
   }
 }
 
