@@ -12,11 +12,15 @@
 			<div class="col-xs-12 col-md-7 col-lg-6 mx-auto detail-header-info">
 				<h1 class="detail-header-info">Strepto Guard</h1>
 				<h2 class="substance gris">+ Dexametasona</h2>
-				<p class="use yellow">Virológico grandes especies</p>
+				<p class="use virologico">Virológico grandes especies</p>
 				<div class="animals">
 					<span class="icon-bobino"></span>
+					<span class="icon-equino"></span>
 					<span class="icon-caprino"></span>
 					<span class="icon-porcino"></span>
+					<span class="icon-canino"></span>
+					<span class="icon-ovino"></span>
+
 				</div>
 			</div>
 			

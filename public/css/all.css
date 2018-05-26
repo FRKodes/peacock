@@ -8637,18 +8637,26 @@ body {
   margin-bottom: 2px;
 }
 
-.main-banners-container .item .info .yellow {
-  background-color: #ffea00;
+.main-banners-container .item .info .use {
   display: inline-block;
   padding-left: 5px;
   padding-right: 5px;
 }
 
-.main-banners-container .item .info .green {
-  background-color: #4C7926;
-  display: inline-block;
-  padding-left: 5px;
-  padding-right: 5px;
+.main-banners-container .item .info .virologico {
+  background-color: #ffea00;
+}
+
+.main-banners-container .item .info .biologico {
+  background-color: #FB9F31;
+}
+
+.main-banners-container .item .info .farmaceutico {
+  background-color: #00D8FF;
+}
+
+.main-banners-container .item .info .antimicrobiano {
+  background-color: #00FFD1;
 }
 
 .main-banners-container .item .info p {
@@ -8756,7 +8764,7 @@ body {
 }
 
 .featured-products-container .product-item .photo {
-  width: 25%;
+  width: 40%;
   display: inline-block;
 }
 
@@ -8768,7 +8776,7 @@ body {
 }
 
 .featured-products-container .product-item .info {
-  width: 65%;
+  width: 55%;
   position: relative;
 }
 
@@ -8788,12 +8796,20 @@ body {
   display: inline-block;
 }
 
-.featured-products-container .product-item .info .use.yellow {
+.featured-products-container .product-item .info .use.virologico {
   background-color: #ffea00;
 }
 
-.featured-products-container .product-item .info .use.green {
-  background-color: #4C7926;
+.featured-products-container .product-item .info .use.biologico {
+  background-color: #FB9F31;
+}
+
+.featured-products-container .product-item .info .use.farmaceutico {
+  background-color: #00D8FF;
+}
+
+.featured-products-container .product-item .info .use.antimicrobiano {
+  background-color: #00FFD1;
 }
 
 .featured-products-container .product-item .info .animals {
@@ -8944,6 +8960,21 @@ body {
   background-size: cover;
 }
 
+.inner-banner.dectomaster_1 {
+  background: transparent url(/images/banner-bacterin-pasteurelosis.jpg) no-repeat center center;
+  background-size: cover;
+}
+
+.inner-banner.dectomaster_3_15 {
+  background: transparent url(/images/banner-bacterin-pasteurelosis.jpg) no-repeat center center;
+  background-size: cover;
+}
+
+.inner-banner.dectomaster_ad3e_la {
+  background: transparent url(/images/banner-bacterin-pasteurelosis.jpg) no-repeat center center;
+  background-size: cover;
+}
+
 .inner-banner.distribuidor {
   background: transparent url(/images/banner-conviertete-distribuidor.jpg) no-repeat center center;
   background-size: cover;
@@ -9015,12 +9046,20 @@ body {
   font-size: .8em;
 }
 
-.cat-products-container .product-item .info .use.yellow {
+.cat-products-container .product-item .info .use.virologico {
   background-color: #ffea00;
 }
 
-.cat-products-container .product-item .info .use.green {
-  background-color: #4C7926;
+.cat-products-container .product-item .info .use.biologico {
+  background-color: #FB9F31;
+}
+
+.cat-products-container .product-item .info .use.farmaceutico {
+  background-color: #00D8FF;
+}
+
+.cat-products-container .product-item .info .use.antimicrobiano {
+  background-color: #00FFD1;
 }
 
 .cat-products-container .product-item .info .animals {
@@ -9063,18 +9102,26 @@ body {
   font-size: 1.2em;
 }
 
-.detail-header-info .use.yellow {
-  background-color: #ffea00;
+.detail-header-info .use {
   display: inline-block;
   padding-left: 5px;
   padding-right: 5px;
 }
 
-.detail-header-info .use.green {
-  background-color: #4C7926;
-  display: inline-block;
-  padding-left: 5px;
-  padding-right: 5px;
+.detail-header-info .use.virologico {
+  background-color: #ffea00;
+}
+
+.detail-header-info .use.biologico {
+  background-color: #FB9F31;
+}
+
+.detail-header-info .use.farmaceutico {
+  background-color: #00D8FF;
+}
+
+.detail-header-info .use.antimicrobiano {
+  background-color: #00FFD1;
 }
 
 .detail-header-info .animals span {
@@ -9488,10 +9535,12 @@ footer .logo-footer {
 
   .featured-products-container .product-item.dos {
     background: #dbc8b7 url(/images/background-product-thumbnail-01.jpg) no-repeat center top;
+    background-size: 100%;
   }
 
   .featured-products-container .product-item.tres {
     background: #dbc8b7 url(/images/background-product-thumbnail-02.jpg) no-repeat center top;
+    background-size: 100%;
   }
 
   .featured-products-container .product-item .photo {
@@ -9502,7 +9551,7 @@ footer .logo-footer {
 
   .featured-products-container .product-item .photo img {
     width: 112px;
-    margin-top: -50px;
+    margin-top: -35px;
   }
 
   .featured-products-container .product-item .info {
@@ -9704,6 +9753,10 @@ footer .logo-footer {
 
   .cat-products-container .product-item .photo img {
     margin-top: -60px;
+  }
+
+  .featured-products-container .product-item .photo img {
+    margin-top: -25px;
   }
 
   .detail-image img {

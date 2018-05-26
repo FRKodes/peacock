@@ -71,6 +71,45 @@ class PagesController extends Controller
         return View('pages.prod.bacterin_8');
     }
 
+    public function dectomaster_1_prolong()
+    {
+        return View('pages.prod.dectomaster_1_prolong');
+    }
+
+    public function dectomaster_3_15()
+    {
+        return View('pages.prod.dectomaster_3_15');
+    }
+
+    public function dectomaster_ad3e_la()
+    {
+        return View('pages.prod.dectomaster_ad3e_la');
+    }
+
+    public function dectomaster_eqpasta()
+    {
+        return View('pages.prod.dectomaster_eqpasta');
+    }
+
+    public function derrienlytic()
+    {
+        return View('pages.prod.derrienlytic');
+    }
+
+    public function vaccine_antrax()
+    {
+        return View('pages.prod.vaccine_antrax');
+    }
+
+    public function vaccine_triple_aviar()
+    {
+        return View('pages.prod.vaccine_triple_aviar');
+    }
+
+    public function vaccine_triple_aviar_curativa()
+    {
+        return View('pages.prod.vaccine_triple_aviar_curativa');
+    }
 
 
 
