@@ -8910,7 +8910,7 @@ body {
 }
 
 .cat-products-container .product-item .photo {
-  width: 35%;
+  width: 45%;
   display: inline-block;
 }
 
@@ -8922,7 +8922,7 @@ body {
 }
 
 .cat-products-container .product-item .info {
-  width: 55%;
+  width: 50%;
   position: relative;
 }
 
@@ -9233,7 +9233,7 @@ footer .logo-footer {
   }
 
   .cat-products-container .product-item .photo img {
-    width: 150px;
+    width: 100%;
   }
 }
 
@@ -9489,8 +9489,8 @@ footer .logo-footer {
     -webkit-box-direction: normal;
         -ms-flex-flow: column;
             flex-flow: column;
-    background: #dbc8b7 url(/images/banner-categoria-ovino.jpg) no-repeat center top;
-    background-size: 120%;
+    background: #dbc8b7 url(/images/background-product-thumbnail.jpg) no-repeat center top;
+    background-size: 135%;
     margin-top: 20px;
   }
 
@@ -9500,8 +9500,9 @@ footer .logo-footer {
   }
 
   .cat-products-container .product-item .photo img {
-    width: 45%;
+    width: 65%;
     display: inline-block;
+    margin-top: -55px;
   }
 
   .cat-products-container .product-item .info {
@@ -9511,7 +9512,7 @@ footer .logo-footer {
   }
 
   .cat-products-container .product-item .info .link_read_more {
-    margin-top: 10px;
+    margin-top: 0px;
   }
 
   .detail-image {
@@ -9721,6 +9722,12 @@ footer .logo-footer {
   .main-banners-container .slick-dots {
     position: relative;
     z-index: 10;
+  }
+
+  .featured-products-container .product-item .photo img {
+    width: 150px;
+    margin-top: -55px;
+    margin-bottom: 20px;
   }
 
   .inner-banner {

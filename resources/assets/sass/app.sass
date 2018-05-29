@@ -362,7 +362,7 @@ body
 		justify-content: space-around
 		margin-bottom: 50px
 		.photo
-			width: 35%
+			width: 45%
 			display: inline-block
 			img
 				width: 100%
@@ -370,7 +370,7 @@ body
 				margin-top: -15px
 				display: inline-block
 		.info
-			width: 55%
+			width: 50%
 			position: relative
 			h3
 				font-size: 1em
@@ -572,7 +572,7 @@ footer
 		.product-item
 			.photo
 				img
-					width: 150px
+					width: 100%
 @media screen and (min-width: 560px)
 	.main-banners-container
 		.item
@@ -725,21 +725,22 @@ footer
 	.cat-products-container
 		.product-item
 			flex-flow: column
-			background: $cafe02 url(/images/banner-categoria-ovino.jpg) no-repeat center top
-			background-size: 120%
+			background: $cafe02 url(/images/background-product-thumbnail.jpg) no-repeat center top
+			background-size: 135%
 			margin-top: 20px
 			.photo
 				width: 100%
 				text-align: center
 				img
-					width: 45%
+					width: 65%
 					display: inline-block
+					margin-top: -55px
 			.info
 				width: 100%
 				padding-left: 15px
 				padding-right: 15px
 				.link_read_more
-					margin-top: 10px
+					margin-top: 0px
 	.detail-image
 		text-align: left
 		img
@@ -861,6 +862,13 @@ footer
 		.slick-dots
 			position: relative
 			z-index: 10
+	.featured-products-container
+		.product-item
+			.photo
+				img
+					width: 150px
+					margin-top: -55px
+					margin-bottom: 20px
 	.inner-banner
 		height: 460px
 	.inner-title

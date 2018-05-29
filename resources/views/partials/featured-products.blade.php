@@ -3,7 +3,9 @@
 		<div class="col-xs-12 featured-products-container">
 			
 			<div class="product-item">
-				<div class="photo"><img src="images/bacterin-2-doble-bovina-thumbnail.png" alt="product bacterin 2 doble bovina thumbnail"></div>
+				<div class="photo">
+					<a href="{{ url('bacterin-2-doble-bovina') }}"><img src="images/bacterin-2-doble-bovina-thumbnail.png" alt="product bacterin 2 doble bovina thumbnail"> </a>
+				</div>
 				<div class="info">
 					<h3>BACTERIN 2</h3>
 					<p class="substance gris">Doble bovina</p>
@@ -18,7 +20,9 @@
 			</div>
 
 			<div class="product-item dos">
-				<div class="photo"><img src="images/dectomaster-1%-thumbnail.png" alt="product dectomaster 1% thumbnail"></div>
+				<div class="photo">
+					<a href="{{ url('dectomaster-1-prolong') }}"><img src="images/dectomaster-1%-thumbnail.png" alt="product dectomaster 1% thumbnail"> </a>
+				</div>
 				<div class="info">
 					<h3>DECTOMASTER 1%</h3>
 					<p class="substance gris">&nbsp;</p>
@@ -29,12 +33,13 @@
 						<span class="icon-porcino"></span>
 						<span class="icon-ovino"></span>
 					</div>
-					<a class="link_read_more bold ubuntu rojo italic" href="#" class="rojo">Ver detalle</a>
+					<a class="link_read_more bold ubuntu rojo italic" href="{{ url('dectomaster-1-prolong') }}" class="rojo">Ver detalle</a>
 				</div>
 			</div>
 
 			<div class="product-item tres">
-				<div class="photo"><img src="images/vaccine-fc-antrax-thumbnail.png" alt="product vaccine fc antrax thumbnail"></div>
+				<div class="photo">
+					<a href="{{ url('vaccine-antrax') }}"><img src="images/vaccine-fc-antrax-thumbnail.png" alt="product vaccine fc antrax thumbnail"></div> </a>
 				<div class="info">
 					<h3>VACCINE FC ANTRAX</h3>
 					<p class="substance gris">&nbsp;</p>
@@ -44,7 +49,7 @@
 						<span class="icon-caprino"></span>
 						<span class="icon-porcino"></span>
 					</div>
-					<a class="link_read_more bold ubuntu rojo italic" href="#" class="rojo">Ver detalle</a>
+					<a class="link_read_more bold ubuntu rojo italic" href="{{ url('vaccine-antrax') }}" class="rojo">Ver detalle</a>
 				</div>
 			</div>
 
