@@ -7,7 +7,7 @@
 	<div class="container">
 		<div class="row cat-products-container">
 				<div class="col-xs-12 col-md-4">
-					<div class="product-item">
+					<div class="product-item bacterin-2">
 						<div class="photo"><img src="images/bacterin-2-doble-bovina-thumbnail.png" alt="product bacterin 2 doble bovina thumbnail"></div>
 						<div class="info">
 							<h3 class="bold">BACTERIN 2</h3>
@@ -25,7 +25,7 @@
 				
 				<div class="col-xs-12 col-md-4">
 					
-					<div class="product-item dos">
+					<div class="product-item bacterin-3">
 						<div class="photo"><img src="images/bacterin-3-triple-bovina-thumbnail.png" alt="product bacterin 3 triple bovina thumbnail"></div>
 						<div class="info">
 							<h3 class="bold">BACTERIN 3</h3>
@@ -42,7 +42,7 @@
 				</div>
 				
 				<div class="col-xs-12 col-md-4">
-					<div class="product-item tres">
+					<div class="product-item bacterin-7">
 						<div class="photo"><img src="images/bacterin-7-vias-thumbnail.png" alt="product bacterin 7 vias"></div>
 						<div class="info">
 							<h3 class="bold">BACTERIN 7 VIAS</h3>
@@ -59,7 +59,7 @@
 				</div>
 
 				<div class="col-xs-12 col-md-4">
-					<div class="product-item tres">
+					<div class="product-item bacterin-past">
 						<div class="photo"><img src="images/bacterin-pasteurelosis-thumbnail.png" alt="product bacterin pasteurelosis thumbnail"></div>
 						<div class="info">
 							<h3 class="bold">BACTERIN</h3>
@@ -76,7 +76,7 @@
 				</div>
 
 				<div class="col-xs-12 col-md-4">
-					<div class="product-item tres">
+					<div class="product-item dectomaster-1">
 						<div class="photo"><img src="images/dectomaster-1%-thumbnail.png" alt="product dectomaster 1% thumbnail"></div>
 						<div class="info">
 							<h3 class="bold">DECTOMASTER</h3>

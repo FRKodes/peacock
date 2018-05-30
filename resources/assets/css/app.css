@@ -9494,6 +9494,26 @@ footer .logo-footer {
     margin-top: 20px;
   }
 
+  .cat-products-container .product-item.bacterin-2 {
+    background-image: url(/images/bacterin-2-doble-bovina-banner-thumbnail.jpg);
+  }
+
+  .cat-products-container .product-item.bacterin-3 {
+    background-image: url(/images/bacterin-3-triple-bovina-banner-thumbnail.jpg);
+  }
+
+  .cat-products-container .product-item.bacterin-7 {
+    background-image: url(/images/bacterin-7-vias-banner-thumbnail.jpg);
+  }
+
+  .cat-products-container .product-item.bacterin-8 {
+    background-image: url(/images/bacterin-8-vias-banner-thumbnail.jpg);
+  }
+
+  .cat-products-container .product-item.bacterin-past {
+    background-image: url(/images/bacterin-pasteurelosis-banner-thumbnail.jpg);
+  }
+
   .cat-products-container .product-item .photo {
     width: 100%;
     text-align: center;
