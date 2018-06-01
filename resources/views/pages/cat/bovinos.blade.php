@@ -1,7 +1,7 @@
 @extends('app')
 
 @section('content')
-	<div class="inner-banner bobinos"></div>
+	<div class="inner-banner bovinos"></div>
 	<h1 class="inner-title icon-bobino text-center">Bovinos</h1>
 
 	<div class="container">

@@ -8441,6 +8441,7 @@ body {
 
 .dropdown-menu {
   background: rgba(87, 47, 11, 0.5);
+  border-radius: 0;
 }
 
 .dropdown-menu .dropdown-item {
@@ -8455,6 +8456,20 @@ body {
   color: white;
   -webkit-transition: background .5s ease;
   transition: background .5s ease;
+}
+
+.dropdown-menu > li > a {
+  color: white;
+}
+
+.dropdown-menu > li > a:hover {
+  color: white;
+  background-color: #572f0b;
+}
+
+.dropdown-menu > li > a:focus {
+  color: white;
+  background-color: #572f0b;
 }
 
 .top-shit {
@@ -8483,6 +8498,25 @@ body {
 
 .navbar-toggler {
   border-color: white;
+}
+
+.dropdown-submenu {
+  position: relative;
+}
+
+.dropdown-submenu a::after {
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+  position: absolute;
+  right: 6px;
+  top: .8em;
+}
+
+.dropdown-submenu .dropdown-menu {
+  top: 0;
+  left: 100%;
+  margin-left: .1rem;
+  margin-right: .1rem;
 }
 
 .main-banners-container {
@@ -8803,7 +8837,32 @@ body {
 }
 
 .inner-banner.ovinos {
-  background: transparent url(/images/banner-categoria-ovino.jpg) no-repeat center center;
+  background: transparent url(/images/categoria-ovino.png) no-repeat center center;
+  background-size: cover;
+}
+
+.inner-banner.bovinos {
+  background: transparent url(/images/categoria-bovino.png) no-repeat center center;
+  background-size: cover;
+}
+
+.inner-banner.caninos {
+  background: transparent url(/images/categoria-canino.png) no-repeat center center;
+  background-size: cover;
+}
+
+.inner-banner.caprinos {
+  background: transparent url(/images/categoria-caprino.png) no-repeat center center;
+  background-size: cover;
+}
+
+.inner-banner.equinos {
+  background: transparent url(/images/categoria-equinos.png) no-repeat center center;
+  background-size: cover;
+}
+
+.inner-banner.felinos {
+  background: transparent url(/images/categoria-felino.png) no-repeat center center;
   background-size: cover;
 }
 
@@ -9751,7 +9810,7 @@ footer .logo-footer {
   }
 
   .inner-banner {
-    height: 460px;
+    height: 600px;
   }
 
   .inner-title {

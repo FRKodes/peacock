@@ -64,6 +64,7 @@ body
 		width: 150px
 .dropdown-menu
 	background: rgba($cafe01, .5)
+	border-radius: 0
 	.dropdown-item
 		background: transparent
 		transition: all .5s ease
@@ -72,6 +73,14 @@ body
 			background: rgba($cafe01, .7)
 			color: white
 			transition: background .5s ease
+.dropdown-menu > li > a
+	color: white
+	&:hover
+		color: white
+		background-color: $cafe01
+	&:focus
+		color: white
+		background-color: $cafe01
 .top-shit
 	display: flex
 	width: 100%
@@ -88,6 +97,19 @@ body
 		color: white
 .navbar-toggler
 	border-color: white
+
+.dropdown-submenu
+	position: relative
+.dropdown-submenu a::after
+	transform: rotate(-90deg)
+	position: absolute
+	right: 6px
+	top: .8em
+.dropdown-submenu .dropdown-menu
+	top: 0
+	left: 100%
+	margin-left: .1rem
+	margin-right: .1rem
 .main-banners-container
 	height: 580px
 	display: block
@@ -302,7 +324,22 @@ body
 	background-color: purple
 	display: block
 	&.ovinos
-		background: transparent url(/images/banner-categoria-ovino.jpg) no-repeat center center
+		background: transparent url(/images/categoria-ovino.png) no-repeat center center
+		background-size: cover
+	&.bovinos
+		background: transparent url(/images/categoria-bovino.png) no-repeat center center
+		background-size: cover
+	&.caninos
+		background: transparent url(/images/categoria-canino.png) no-repeat center center
+		background-size: cover
+	&.caprinos
+		background: transparent url(/images/categoria-caprino.png) no-repeat center center
+		background-size: cover
+	&.equinos
+		background: transparent url(/images/categoria-equinos.png) no-repeat center center
+		background-size: cover
+	&.felinos
+		background: transparent url(/images/categoria-felino.png) no-repeat center center
 		background-size: cover
 	&.strepto_guard
 		background: transparent url(/images/background-producto-principal-caballos.jpg) no-repeat center center
@@ -880,7 +917,7 @@ footer
 					margin-top: -55px
 					margin-bottom: 20px
 	.inner-banner
-		height: 460px
+		height: 600px
 	.inner-title
 		font-size: 4em
 		margin-top: 40px

@@ -36,6 +36,41 @@ class PagesController extends Controller
         return View('pages.cat.bovinos');
     }
 
+    public function caninos()
+    {
+        return View('pages.cat.caninos');
+    }
+
+    public function caprinos()
+    {
+        return View('pages.cat.caprinos');
+    }
+
+    public function equinos()
+    {
+        return View('pages.cat.equinos');
+    }
+
+    public function ovinos()
+    {
+        return View('pages.cat.ovinos');
+    }
+
+    public function felinos()
+    {
+        return View('pages.cat.felinos');
+    }
+
+    public function aves()
+    {
+        return View('pages.cat.aves');
+    }
+
+    public function porcinos()
+    {
+        return View('pages.cat.porcinos');
+    }
+
     public function strepto_guard()
     {
         return View('pages.prod.strepto_guard');
