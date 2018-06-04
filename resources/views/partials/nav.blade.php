@@ -19,11 +19,11 @@
 							    <ul class="dropdown-menu">
 									  <li class="dropdown-submenu"><a class="dropdown-item dropdown-toggle" href="#">Biológico</a>
 									    <ul class="dropdown-menu">
-									      <li><a class="dropdown-item" href="{{ url('bacteriologico') }}">Bacteriológico</a></li>
-									      <li><a class="dropdown-item" href="{{ url('virologico') }}">virológico</a></li>
+									      <li><a class="dropdown-item" href="{{ url('bacteriologicos') }}">Bacteriológicos</a></li>
+									      <li><a class="dropdown-item" href="{{ url('virologicos') }}">virológicos</a></li>
 									    </ul>
 									  </li>
-									  <li class="dropdown-submenu"><a class="dropdown-item dropdown-toggle" href="#">Farmacéutico</a>
+									  <li class="dropdown-submenu"><a class="dropdown-item dropdown-toggle" href="#">Farmacéuticos</a>
 									    <ul class="dropdown-menu">
 											<li><a class="dropdown-item" href="{{ url('desparacitantes') }}">Desparacitantes</a></li>
 											<li><a class="dropdown-item" href="{{ url('anti-microbianos') }}">Anti microbianos</a></li>

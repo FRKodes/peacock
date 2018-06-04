@@ -8969,6 +8969,11 @@ body {
   background-size: cover;
 }
 
+.inner-banner.porcinos {
+  background: transparent url(/images/categoria-porcino.png) no-repeat center center;
+  background-size: cover;
+}
+
 .inner-banner.strepto_guard {
   background: transparent url(/images/background-producto-principal-caballos.jpg) no-repeat center center;
   background-size: cover;
@@ -9020,17 +9025,37 @@ body {
 }
 
 .inner-banner.dectomaster_1 {
-  background: transparent url(/images/banner-bacterin-pasteurelosis.jpg) no-repeat center center;
+  background: transparent url(/images/dectomaster-1-por-ciento.png) no-repeat center center;
   background-size: cover;
 }
 
 .inner-banner.dectomaster_3_15 {
-  background: transparent url(/images/banner-bacterin-pasteurelosis.jpg) no-repeat center center;
+  background: transparent url(/images/dectomaster-3-15.png) no-repeat center center;
   background-size: cover;
 }
 
 .inner-banner.dectomaster_ad3e_la {
-  background: transparent url(/images/banner-bacterin-pasteurelosis.jpg) no-repeat center center;
+  background: transparent url(/images/dectomaster-ad3e-banner.png) no-repeat center center;
+  background-size: cover;
+}
+
+.inner-banner.derrienlytic {
+  background: transparent url(/images/derrienlytic-banner.png) no-repeat center center;
+  background-size: cover;
+}
+
+.inner-banner.eqpasta {
+  background: transparent url(/images/eqpasta-banner.png) no-repeat center center;
+  background-size: cover;
+}
+
+.inner-banner.vaccine_fc_antrax {
+  background: transparent url(/images/vaccine-fc-antrax-banner.png) no-repeat center center;
+  background-size: cover;
+}
+
+.inner-banner.vaccine_triple_aviar_curativa {
+  background: transparent url(/images/vaccine-triple-aviar-curativa.png) no-repeat center center;
   background-size: cover;
 }
 

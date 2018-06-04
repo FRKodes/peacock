@@ -12,7 +12,7 @@
 			<div class="col-xs-12 col-md-7 col-lg-6 mx-auto detail-header-info">
 				<h1 class="detail-header-info">DERRIENLYTIC</h1>
 				<h2 class="substance gris">&nbsp;</h2>
-				<p class="use biologico">---</p>
+				<p class="use farmaceutico">Farmacéutico</p>
 				<div class="animals">
 					<span class="icon-bobino"></span>
 					<span class="icon-caprino"></span>

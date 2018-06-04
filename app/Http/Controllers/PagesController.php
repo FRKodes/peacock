@@ -71,6 +71,31 @@ class PagesController extends Controller
         return View('pages.cat.porcinos');
     }
 
+    public function bacteriologicos()
+    {
+        return View('pages.cat.bacteriologicos');
+    }
+
+    public function virologicos()
+    {
+        return View('pages.cat.virologicos');
+    }
+
+    public function desparacitantes()
+    {
+        return View('pages.cat.desparacitantes');
+    }
+
+    public function anti_microbianos()
+    {
+        return View('pages.cat.anti_microbianos');
+    }
+
+    public function vitaminicos()
+    {
+        return View('pages.cat.vitaminicos');
+    }
+
     public function strepto_guard()
     {
         return View('pages.prod.strepto_guard');
